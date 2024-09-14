@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        purpleTransparent: "rgba(171, 0, 255, 0)",
+        purpleOpaque: "rgba(171, 0, 255, 1)",
       },
     },
   },

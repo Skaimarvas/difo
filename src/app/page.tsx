@@ -11,7 +11,7 @@ import lock from "@/assets/kilit.png";
 
 export default function Home() {
   return (
-    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full  sm:w-fit px-5 lg:px-2 sm:px-0">
+    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center min-h-screen w-full  sm:w-fit px-5 lg:px-2 sm:px-0">
       {/* Section 1 --> */}
       <section className="flex">
         <div className="block">
@@ -21,13 +21,12 @@ export default function Home() {
           <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
             Pre-sale planning of the $DIFO Token
           </h2>
-
           <p className="text-center text-xl sm:text-base sm:w-[320px] mx-auto mt-4 ">
             The highly anticipated discounted public sale rounds of $DIFO token
             are now live.
           </p>
           {/* Horizontal Line  */}
-          <div className="h-[2px] w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] my-4 sm:hidden"></div>
+          <div className="flex h-[2px] w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] my-4 sm:hidden"></div>
           <h4 className="bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent  text-center text-lg sm:text-sm sm:mt-5 font-extrabold">
             Round 1 Total Token: 43,950.000 $DIFO
           </h4>

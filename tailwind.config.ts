@@ -24,7 +24,7 @@ const config: Config = {
 
       md: { max: "767px" },
 
-      sm: { max: "639px" },
+      sm: { max: "642px" },
     },
   },
   plugins: [],

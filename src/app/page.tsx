@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex justify-center gap-2 md:gap-24 sm:gap-2 mt-8 mb-1 sm:w-[320px] mx-auto">
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex gap-2 p-4 justify-center h-[170px] sm:h-48 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
+                <div className="flex gap-2 p-4 justify-center h-[170px] sm:h-44 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
                   <div>
                     <h5 className="text-[#99EDFF] lg:text-xs sm:text-[10px] ">
                       Public Sale
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex  gap-2 p-4 justify-center h-[170px] sm:h-48 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
+                <div className="flex  gap-2 p-4 justify-center h-[170px] sm:h-44 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
                   <div>
                     <h5 className="text-[#99EDFF]  lg:text-xs sm:text-[10px] ">
                       First come, first served

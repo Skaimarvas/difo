@@ -2,7 +2,7 @@ import Time from "./molecules/Time";
 
 const TimeSection = () => {
   return (
-    <div className="flex justify-evenly lg:gap-0 gap-20  relative my-8">
+    <div className="flex justify-evenly lg:gap-0 gap-16  relative my-8">
       <Time timeData="21" timeType="Days" />
       <Time timeData="12" timeType="Hours" />
       <Time timeData="06" timeType="Minutes" />

@@ -13,7 +13,7 @@ const Time: FC<Iprops> = ({ timeData, timeType }) => {
       </span>
       <div className="relative bg-black rounded-xl">
         <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-          <div className="flex items-center justify-center h-14 w-12 sm:h-16 sm:w-14 bg-black rounded-lg">
+          <div className="flex items-center justify-center h-[72px] w-[64px] sm:h-16 sm:w-14 bg-black rounded-lg">
             <span className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
               {timeData}
             </span>

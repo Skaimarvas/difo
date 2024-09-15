@@ -7,6 +7,10 @@
   --foreground: #ededed;
 }
 
+/* * {
+  border: 1px solid lime;
+} */
+
 body {
   color: var(--foreground);
   background: var(--background);

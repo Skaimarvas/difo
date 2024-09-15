@@ -1,13 +1,16 @@
+import image from "@/assets/636.png";
+import copy from "@/assets/copy.png";
+import external from "@/assets/external.png";
+import HorizontalLines from "@/components/molecules/HorizontalLines";
+import VerticalLines from "@/components/molecules/VerticalLines";
 import Time from "@/components/Time";
 import Image from "next/image";
-import copy from "@/assets/copy.png";
-import image from "@/assets/636.png";
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap justify-between h-screen w-full">
-      {/* <div className="bg-gradient-to-b from-purpleTransparent via-purpleOpaque to-purpleTransparent h-2 w-full rotate-90"></div> */}
-      <section className="flex flex-col w-1/2">
+    <div className="flex flex-wrap justify-between h-screen w-full px-5">
+      <VerticalLines />
+      <section className="flex flex-col w-[700px] px-2">
         <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl text-center font-extrabold">
           Pre-sale planning of the $DIFO Token
         </h2>
@@ -15,18 +18,26 @@ export default function Home() {
           The highly anticipated discounted public sale rounds of $DIFO token
           are now live.
         </p>
-        <hr />
+        <HorizontalLines />
         <h4 className="bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent  text-center font-extrabold">
           Round 1 Total Token: 43,950.000 $DIFO
         </h4>
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col w-[600px] mx-auto">
           <div className="flex justify-end">
             <span className="bg-gradient-to-r from-[#AB00FF] to-[#FFAC00] bg-clip-text text-transparent text-right font-extrabold">
               %100
             </span>
           </div>
-          <div className="flex justify-center">
-            <span>progress bar</span>
+          <div className="flex justify-center relative bg-black">
+            <div className="flex justify-start p-1 rounded-xl w-full bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
+              <div className="flex items-center justify-center h-4 w-full bg-black rounded-lg"></div>
+            </div>
+            <div className="absolute left-0 p-3 justify-center h-2 w-[100px] bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] rounded-xl"></div>
+            <div className="absolute left-[110px]">
+              <span className="bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent text-center font-bold">
+                %25
+              </span>
+            </div>
           </div>
         </div>
         <div className="flex justify-evenly relative">
@@ -40,7 +51,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <hr />
+        <HorizontalLines />
         <h4 className="text-[#FFAC00] text-2xl text-center font-bold">
           Total Token Supply (TTS):
         </h4>
@@ -48,7 +59,7 @@ export default function Home() {
           <span className="font-bold">MAX:</span>It is limited to 879,000,000
           million $DIFO.
         </p>
-        <hr />
+        <HorizontalLines />
         <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl text-center font-extrabold">
           $DIFO Smart Contract Address:
         </h2>
@@ -63,8 +74,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <div className="bg-gradient-to-b from-purpleTransparent via-purpleOpaque to-purpleTransparent h-2 w-full rotate-90"></div> */}
-      <section className="flex flex-col w-1/2">
+      <VerticalLines />
+      <section className="flex flex-col w-[700px] px-2">
         <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl text-center font-extrabold">
           Pre-sale Details of the $DIFO Token
         </h2>
@@ -106,7 +117,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <hr />
+        <HorizontalLines />
         <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl text-center font-extrabold">
           The buy-back protection program
         </h2>
@@ -117,16 +128,23 @@ export default function Home() {
               first 6 months after its initial listing, Difo Finance commits to
               repurchasing $DIFO tokens at a 90% protection level.
             </p>
-            <p>
+            <p className="text-[#00E0FF] font-semibold">
               You can check out detailed information about the buyback
               protection program below.
             </p>
-            <button>Learn More</button>
+            <div className="flex justify-center relative bg-black">
+              <div className="rounded-xl p-1 bg-gradient-to-r from-[#00D1FF] to-[#FFAC00]">
+                <button className="flex items-center p-3 justify-center h-8 w-full bg-black rounded-lg">
+                  <span className="text-[#00B2FF]">Learn More</span>
+                  <Image src={external} alt="external" />
+                </button>
+              </div>
+            </div>
           </div>
           <Image src={image} alt="image" />
         </div>
       </section>
-      {/*    <div className="bg-gradient-to-b from-purpleTransparent via-purpleOpaque to-purpleTransparent h-2 w-full rotate-90"></div> */}
+      <VerticalLines />
     </div>
   );
 }

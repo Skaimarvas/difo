@@ -54,8 +54,8 @@ export default function Home() {
             {/* Smart Contract Address */}
             <div className="flex justify-center relative bg-black my-6">
               <div className="rounded-md p-[2px] bg-gradient-to-r from-[#00D1FF] to-[#FFAC00]">
-                <div className="flex justify-evenly items-center gap-2 p-2  h-11 w-[550px] lg:w-[400px] sm:w-[320px] bg-black rounded-md">
-                  <span className=" text-white text-lg text-transparent bg-clip-text lg:text-sm sm:text-[10px] ">
+                <div className="flex justify-evenly md:justify-between items-center gap-2 p-2  h-11 w-[550px] lg:w-[400px] md:w-[600px] sm:w-[320px] bg-black rounded-md">
+                  <span className=" text-white text-lg text-transparent bg-clip-text lg:text-sm md:text-base sm:text-[10px] ">
                     0x0E3FE9943Dc07B6eBF8D272e69BD6988330eeb99
                   </span>
                   <button>

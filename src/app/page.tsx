@@ -11,16 +11,18 @@ import lock from "@/assets/kilit.png";
 
 export default function Home() {
   return (
-    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-between h-screen w-full px-5 lg:px-2 sm-px-1">
+    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full px-5 lg:px-2 sm:px-0">
+      {/* Section 1 --> */}
       <section className="flex">
         <div className="block">
           <VerticalLines />
         </div>
-        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px]  p-4">
+        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[400px] p-4 sm:p-4">
           <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
             Pre-sale planning of the $DIFO Token
           </h2>
-          <p className="text-center text-xl sm:text-lg mt-4">
+
+          <p className="text-center text-xl sm:text-lg mt-4 ">
             The highly anticipated discounted public sale rounds of $DIFO token
             are now live.
           </p>
@@ -30,8 +32,8 @@ export default function Home() {
           </h4>
           <ProgressBar />
           <TimeSection />
-          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] opacity-50"></div>
-          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00]"></div>
+          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] sm:from-[#016DD000] sm:via-[#AB00FF] sm:to-[#016DD000]  opacity-50"></div>
+          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] sm:from-[#016DD000] sm:via-[#AB00FF] sm:to-[#016DD000]"></div>
           <div className="my-4">
             <h4 className="text-[#FFAC00] text-2xl text-center font-bold">
               Total Token Supply (TTS):
@@ -41,8 +43,8 @@ export default function Home() {
               879,000,000 million $DIFO.
             </p>
           </div>
-          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00]"></div>
-          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] opacity-50"></div>
+          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] sm:from-[#016DD000] sm:via-[#AB00FF] sm:to-[#016DD000]"></div>
+          <div className="h-1 w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] sm:from-[#016DD000] sm:via-[#AB00FF] sm:to-[#016DD000] opacity-50 "></div>
 
           <div className="mt-10">
             <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
@@ -69,41 +71,43 @@ export default function Home() {
       <div className="lg:hidden">
         <VerticalLines />
       </div>
+      {/* Section 2 --> */}
       <section className="flex">
         <div className="hidden lg:block sm:hidden">
           <VerticalLines />
         </div>
-        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] p-4 sm:p-2">
-          <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl text-center font-extrabold">
+        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[400px] p-4 sm:p-4">
+          <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
             Pre-sale Details of the $DIFO Token
           </h2>
-          <div className="flex justify-center gap-2 mt-8">
+          {/* Type of Sale --> */}
+          <div className="flex justify-center gap-2 mt-8 sm:w-[350px] mx-auto">
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] bg-black rounded-lg">
+                <div className="flex gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[170px] bg-black rounded-lg">
                   <div>
-                    <h5 className="text-[#99EDFF] lg:text-sm">Public Sale</h5>
-                    <p className="lg:text-sm">
+                    <h5 className="text-[#99EDFF] lg:text-xs">Public Sale</h5>
+                    <p className="lg:text-xs">
                       The public sale will have 3 rounds. Round 1 will start on
                       October 15 at 12:00 UTC.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="absolute top-[-12px] bg-black px-4">
-                <h4 className=" bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent text-2xl lg:text-base text-center font-extrabold ">
+              <div className="absolute top-[-10px] bg-black px-4 sm:px-2 ">
+                <h4 className=" bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent text-2xl lg:text-base sm:text-xs text-center font-extrabold ">
                   Type of sale
                 </h4>
               </div>
             </div>
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex  gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] bg-black rounded-lg">
+                <div className="flex  gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[170px] bg-black rounded-lg">
                   <div>
-                    <h5 className="text-[#99EDFF] lg:text-sm">
+                    <h5 className="text-[#99EDFF] lg:text-xs">
                       First come, first served
                     </h5>
-                    <p className="lg:text-sm">
+                    <p className="lg:text-xs">
                       The public sale rounds of the $DIFO token will be
                       conducted on a first-come, first-served basis, exclusively
                       during the opening of Difo Launchpad.
@@ -111,8 +115,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-[-12px] bg-black px-4">
-                <h4 className=" bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent text-2xl lg:text-base text-center font-extrabold ">
+              <div className="absolute top-[-10px] bg-black px-4 sm:px-2">
+                <h4 className=" bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent text-2xl lg:text-base sm:text-xs text-center font-extrabold ">
                   Token Sale Format
                 </h4>
               </div>
@@ -121,62 +125,67 @@ export default function Home() {
           <div className=" sm:hidden my-5">
             <HorizontalLines />
           </div>
-          <div className="relative hidden  sm:block my-16 w-full">
-            <div className="h-1 w-full bg-gradient-to-r from-[#016DD000] via-[#F3BA2F] to-[#016DD000]"></div>
-            <div className="absolute top-[-24px]">
+          {/* Mobil Icons Section -->*/}
+          <div className="relative hidden  sm:flex sm:justify-center my-16 mx-auto w-[350px]">
+            <div className=" h-1 w-[300px] bg-gradient-to-r from-[#016DD000] via-[#F3BA2F] to-[#016DD000]"></div>
+            <div className="absolute top-[-24px] left-[0px]">
               <Image width={60} height={60} src={icon} alt="copy" />
             </div>
-            <div className="absolute top-[-32px] left-[210px] bg-black">
+            <div className="absolute top-[-32px] left-[140px] bg-black">
               <Image width={70} height={70} src={lock} alt="lock" />
             </div>
-            <div className="absolute top-[-24px] right-0">
+            <div className="absolute top-[-24px] right-[0px]">
               <Image width={60} height={60} src={icon} alt="copy" />
             </div>
           </div>
-          <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] sm:bg-gradient-to-r sm:from-[#00D1FF] sm:to-[#AB00FF] bg-clip-text text-transparent text-3xl sm:text-2xl text-center sm:text-left font-extrabold  mb-2">
-            The buy-back protection program
-          </h2>
-          <div className="flex sm:flex-row-reverse sm:gap-2 ">
-            <div className="flex flex-col gap-2 items-start">
-              <p>
-                If the $DIFO token falls below the public sale price within the
-                first 6 months after its initial listing, Difo Finance commits
-                to repurchasing $DIFO tokens at a 90% protection level.
-              </p>
-              <p className="text-[#00E0FF] font-semibold sm:hidden">
-                You can check out detailed information about the buyback
-                protection program below.
-              </p>
-              <div className="flex justify-center relative bg-black my-2 sm:hidden">
-                <div className="rounded-md p-[2px] bg-gradient-to-r from-[#EE1D52] to-[#00D1FF]">
-                  <button className="flex items-center justify-center gap-2 p-5 h-10 w-full bg-black hover:bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] rounded-md">
-                    <span className="text-[#00B2FF]">Learn More</span>
-                    <Image
-                      width={20}
-                      height={20}
-                      src={external}
-                      alt="external"
-                    />
-                  </button>
+          {/* Buy Protection -->*/}
+          <div className="sm:flex sm:flex-col sm:w-[350px] mx-auto">
+            <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] sm:bg-gradient-to-r sm:from-[#00D1FF] sm:to-[#AB00FF] bg-clip-text text-transparent text-3xl sm:text-lg text-center sm:text-left font-extrabold  mb-2">
+              The buy-back protection program
+            </h2>
+            <div className="flex sm:flex-row-reverse sm:gap-2 ">
+              <div className="flex flex-col gap-2 items-start">
+                <p className="sm:text-xs">
+                  If the $DIFO token falls below the public sale price within
+                  the first 6 months after its initial listing, Difo Finance
+                  commits to repurchasing $DIFO tokens at a 90% protection
+                  level.
+                </p>
+                <p className="text-[#00E0FF] font-semibold sm:hidden">
+                  You can check out detailed information about the buyback
+                  protection program below.
+                </p>
+                <div className="flex justify-center relative bg-black my-2 sm:hidden">
+                  <div className="rounded-md p-[2px] bg-gradient-to-r from-[#EE1D52] to-[#00D1FF]">
+                    <button className="flex items-center justify-center gap-2 p-5 h-10 w-full bg-black hover:bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] rounded-md">
+                      <span className="text-[#00B2FF]">Learn More</span>
+                      <Image
+                        width={20}
+                        height={20}
+                        src={external}
+                        alt="external"
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
+              <Image
+                className="w-[400px] h-[300px] sm:w-[200px] sm:h-[180px] lg:w-[300px] lg:h-[250px]"
+                src={image}
+                alt="image"
+              />
             </div>
-            <Image
-              className="w-[400px] h-[300px] sm:w-[200px] sm:h-[180px] lg:w-[300px] lg:h-[250px]"
-              src={image}
-              alt="image"
-            />
-          </div>
-          <p className="hidden sm:block text-[#00E0FF] font-semibold sm:font-normal">
-            You can check out detailed information about the buyback protection
-            program below.
-          </p>
-          <div className="hidden sm:flex justify-center relative bg-black my-2 w-full">
-            <div className="rounded-md p-[2px] bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] w-full">
-              <button className="flex items-center justify-center gap-2 p-5 h-10 w-full bg-black hover:bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] rounded-md">
-                <span className="text-[#00B2FF]">Learn More</span>
-                <Image width={20} height={20} src={external} alt="external" />
-              </button>
+            <p className="hidden sm:block text-[#00E0FF] font-semibold sm:font-normal sm:text-xs">
+              You can check out detailed information about the buyback
+              protection program below.
+            </p>
+            <div className="hidden sm:flex justify-center relative bg-black my-2 w-full">
+              <div className="rounded-md p-[2px] bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] w-full">
+                <button className="flex items-center justify-center gap-2 p-5 h-10 w-full bg-black hover:bg-gradient-to-r from-[#EE1D52] to-[#00D1FF] rounded-md">
+                  <span className="text-[#00B2FF]">Learn More</span>
+                  <Image width={20} height={20} src={external} alt="external" />
+                </button>
+              </div>
             </div>
           </div>
         </div>

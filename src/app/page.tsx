@@ -11,7 +11,7 @@ import lock from "@/assets/kilit.png";
 
 export default function Home() {
   return (
-    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full sm:w-[375px] sm:mx-auto px-5 lg:px-2 sm:px-0">
+    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full  sm:w-fit px-5 lg:px-2 sm:px-0">
       {/* Section 1 --> */}
       <section className="flex">
         <div className="block">
@@ -130,12 +130,12 @@ export default function Home() {
             <HorizontalLines />
           </div>
           {/* Mobil Icons Section -->*/}
-          <div className="relative hidden  sm:flex sm:justify-center my-16 mx-auto w-[350px]">
+          <div className="relative hidden  sm:flex sm:justify-center my-16 mx-auto w-[320px]">
             <div className=" h-1 w-[300px] bg-gradient-to-r from-[#016DD000] via-[#F3BA2F] to-[#016DD000]"></div>
             <div className="absolute top-[-24px] left-[0px]">
               <Image width={60} height={60} src={icon} alt="copy" />
             </div>
-            <div className="absolute top-[-32px] left-[140px] bg-black">
+            <div className="absolute top-[-32px] left-[125px] bg-black">
               <Image width={70} height={70} src={lock} alt="lock" />
             </div>
             <div className="absolute top-[-24px] right-[0px]">
@@ -143,7 +143,7 @@ export default function Home() {
             </div>
           </div>
           {/* Buy Protection -->*/}
-          <div className="sm:flex sm:flex-col sm:w-[350px] mx-auto">
+          <div className="sm:flex sm:flex-col sm:w-[320px] mx-auto">
             <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] sm:bg-gradient-to-r sm:from-[#00D1FF] sm:to-[#AB00FF] bg-clip-text text-transparent text-3xl sm:text-lg text-center sm:text-left font-extrabold  mb-2">
               The buy-back protection program
             </h2>

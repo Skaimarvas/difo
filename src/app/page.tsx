@@ -11,21 +11,22 @@ import lock from "@/assets/kilit.png";
 
 export default function Home() {
   return (
-    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full px-5 lg:px-2 sm:px-0">
+    <div className="flex lg:flex-wrap flex-row lg:justify-center justify-center h-screen w-full sm:w-[375px] sm:mx-auto px-5 lg:px-2 sm:px-0">
       {/* Section 1 --> */}
       <section className="flex">
         <div className="block">
           <VerticalLines />
         </div>
-        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[400px] p-4 sm:p-4">
+        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[375px] p-4 sm:p-2">
           <h2 className="bg-gradient-to-r from-[#52FF00] to-[#016DD0] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
             Pre-sale planning of the $DIFO Token
           </h2>
 
-          <p className="text-center text-xl sm:text-lg mt-4 ">
+          <p className="text-center text-xl sm:text-base sm:w-[320px] mx-auto mt-4 ">
             The highly anticipated discounted public sale rounds of $DIFO token
             are now live.
           </p>
+          {/* Horizontal Line  */}
           <div className="h-[2px] w-full bg-gradient-to-r from-[#0500FF00] via-[#FF5C00] to-[#0500FF00] my-4 sm:hidden"></div>
           <h4 className="bg-gradient-to-r from-[#FFAC00] to-[#AB00FF] bg-clip-text text-transparent  text-center text-lg sm:text-sm sm:mt-5 font-extrabold">
             Round 1 Total Token: 43,950.000 $DIFO
@@ -50,10 +51,11 @@ export default function Home() {
             <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
               $DIFO Smart Contract Address:
             </h2>
+            {/* Smart Contract Address */}
             <div className="flex justify-center relative bg-black my-6">
               <div className="rounded-md p-[2px] bg-gradient-to-r from-[#00D1FF] to-[#FFAC00]">
-                <div className="flex items-center gap-2 p-2 justify-center h-10 w-full bg-black rounded-md">
-                  <span className=" text-white font-bold text-transparent bg-clip-text sm:text-xs ">
+                <div className="flex items-center gap-2 p-2 justify-center h-10 w-full sm:w-[320px] bg-black rounded-md">
+                  <span className=" text-white font-bold text-transparent bg-clip-text sm:text-[10px] ">
                     0x0E3FE9943Dc07B6eBF8D272e69BD6988330eeb99
                   </span>
                   <button>
@@ -76,18 +78,20 @@ export default function Home() {
         <div className="hidden lg:block sm:hidden">
           <VerticalLines />
         </div>
-        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[400px] p-4 sm:p-4">
+        <div className="flex flex-col lg:w-[500px] w-[700px] sm:min-w-[300px] sm:max-w-[375px] p-4 sm:p-2">
           <h2 className="bg-gradient-to-r from-[#016DD0] to-[#52FF00] bg-clip-text text-transparent text-3xl sm:text-xl text-center font-extrabold">
             Pre-sale Details of the $DIFO Token
           </h2>
           {/* Type of Sale --> */}
-          <div className="flex justify-center gap-2 mt-8 sm:w-[350px] mx-auto">
+          <div className="flex justify-center gap-2 mt-8 sm:w-[320px] mx-auto">
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[170px] bg-black rounded-lg">
+                <div className="flex gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
                   <div>
-                    <h5 className="text-[#99EDFF] lg:text-xs">Public Sale</h5>
-                    <p className="lg:text-xs">
+                    <h5 className="text-[#99EDFF] lg:text-sm sm:text-[10px] ">
+                      Public Sale
+                    </h5>
+                    <p className="lg:text-sm sm:text-[10px] ">
                       The public sale will have 3 rounds. Round 1 will start on
                       October 15 at 12:00 UTC.
                     </p>
@@ -102,12 +106,12 @@ export default function Home() {
             </div>
             <div className="flex justify-center relative bg-black">
               <div className="rounded-xl p-1 bg-gradient-to-r from-[#FFAC00] to-[#AB00FF]">
-                <div className="flex  gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[170px] bg-black rounded-lg">
+                <div className="flex  gap-2 p-4 justify-center h-48 lg:w-[200px] w-[300px] sm:w-[150px] bg-black rounded-lg">
                   <div>
-                    <h5 className="text-[#99EDFF] lg:text-xs">
+                    <h5 className="text-[#99EDFF] lg:text-sm sm:text-[10px] ">
                       First come, first served
                     </h5>
-                    <p className="lg:text-xs">
+                    <p className="lg:text-sm sm:text-[10px] ">
                       The public sale rounds of the $DIFO token will be
                       conducted on a first-come, first-served basis, exclusively
                       during the opening of Difo Launchpad.

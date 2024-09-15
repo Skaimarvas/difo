@@ -12,7 +12,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         purpleTransparent: "rgba(171, 0, 255, 0)",
-        purpleOpaque: "rgba(171, 0, 255, 1)",
+        purpleOpaque: "rgba(5, 0, 255, 0)",
       },
     },
     screens: {

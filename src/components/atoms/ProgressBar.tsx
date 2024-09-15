@@ -2,7 +2,7 @@ import React from "react";
 
 const ProgressBar = () => {
   return (
-    <div className="flex flex-col lg:w-[400px] w-[600px] mx-auto">
+    <div className="flex flex-col lg:w-[400px] w-[600px] sm:w-[350px] mx-auto">
       <div className="flex justify-end">
         <span className="bg-gradient-to-r from-[#AB00FF] to-[#FFAC00] bg-clip-text text-transparent text-right font-extrabold">
           %100
